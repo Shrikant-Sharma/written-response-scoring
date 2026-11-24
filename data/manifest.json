@@ -1,0 +1,12 @@
+{
+ "what": "Scored written responses from the Automated Student Assessment Prize (ASAP), 2012: 12,976 essays on 8 prompts, each scored by two trained human raters.",
+ "publisher": "The William and Flora Hewlett Foundation, released for a Kaggle competition in 2012: https://www.kaggle.com/c/asap-aes",
+ "license_note": "The file was released for the competition and is widely used in research. No open license is stated. This project downloads the file and does not redistribute it.",
+ "file": {
+  "name": "training_set_rel3.tsv",
+  "url": "https://huggingface.co/datasets/TasfiaS/ASAP-AES/resolve/a46733395585b56c3bbe88f1957360a632ac3e9e/training_set_rel3.tsv",
+  "bytes": 16337165,
+  "sha256": "cf04127eaff3224ce4aab64654e62e5738d3d672c61bb998546dd1674c60d312",
+  "rows": 12976
+ }
+}

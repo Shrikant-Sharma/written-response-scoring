@@ -1,0 +1,105 @@
+{
+ "variants": {
+  "full": {
+   "dropped": [],
+   "features_left": 20,
+   "tune": {
+    "mae_points": 9.83362577376734,
+    "r2": 0.6731127015876568,
+    "exact": 0.5573706728899261,
+    "kappa_mean": 0.7615647938379981
+   },
+   "test": {
+    "mae_points": 9.878545960470142,
+    "r2": 0.6702636718286987,
+    "exact": 0.5514592933947773,
+    "kappa_mean": 0.7462336998151369
+   },
+   "pasted_twice": {
+    "mean_score_before": 57.64654321324903,
+    "mean_score_after": 64.97866836813577,
+    "share_scored_higher": 0.9251152073732719,
+    "share_scored_lower": 0.0748847926267281
+   }
+  },
+  "no size counts": {
+   "dropped": [
+    "words",
+    "log_words",
+    "sentences"
+   ],
+   "features_left": 17,
+   "tune": {
+    "mae_points": 9.993788142368595,
+    "r2": 0.6693954377968547,
+    "exact": 0.5530921820303384,
+    "kappa_mean": 0.7590729322184182,
+    "cost_against_full": {
+     "gain_points": 0.16016236860125724,
+     "low": 0.07289794763802886,
+     "high": 0.24952695787267154
+    }
+   },
+   "test": {
+    "mae_points": 10.02696771918919,
+    "r2": 0.6650356691748027,
+    "exact": 0.5407066052227343,
+    "kappa_mean": 0.73849271141723,
+    "cost_against_full": {
+     "gain_points": 0.14842175871904717,
+     "low": 0.058467372036239106,
+     "high": 0.2318113447579466
+    }
+   },
+   "pasted_twice": {
+    "mean_score_before": 57.60025628302904,
+    "mean_score_after": 56.2558566828946,
+    "share_scored_higher": 0.30414746543778803,
+    "share_scored_lower": 0.695468509984639
+   }
+  },
+  "no length": {
+   "dropped": [
+    "words",
+    "log_words",
+    "sentences",
+    "distinct_words"
+   ],
+   "features_left": 16,
+   "tune": {
+    "mae_points": 10.992599519584981,
+    "r2": 0.6249181181631271,
+    "exact": 0.5075845974329055,
+    "kappa_mean": 0.7049056318481878,
+    "cost_against_full": {
+     "gain_points": 1.1589737458176428,
+     "low": 0.9348297364299764,
+     "high": 1.3742177253181052
+    }
+   },
+   "test": {
+    "mae_points": 10.979426035376694,
+    "r2": 0.6148039053308532,
+    "exact": 0.4957757296466974,
+    "kappa_mean": 0.6988146980999936,
+    "cost_against_full": {
+     "gain_points": 1.100880074906552,
+     "low": 0.8948694623762624,
+     "high": 1.308390000458587
+    }
+   },
+   "pasted_twice": {
+    "mean_score_before": 57.503469339248156,
+    "mean_score_after": 43.30959856442655,
+    "share_scored_higher": 0.016129032258064516,
+    "share_scored_lower": 0.9834869431643625
+   }
+  }
+ },
+ "full_repeats_step_3_and_4": true,
+ "length_only_error": {
+  "tune": 12.223918417136032,
+  "test": 12.155746403748608
+ },
+ "seconds": 30
+}

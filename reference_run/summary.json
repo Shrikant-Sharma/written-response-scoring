@@ -1,0 +1,255 @@
+{
+ "step_2": {
+  "raw_rows": 12976,
+  "duplicate_groups": 4,
+  "duplicate_rows_removed": 4,
+  "duplicate_groups_with_two_different_scores": 2,
+  "kept": 12972
+ },
+ "step_3_parts": {
+  "train": 7797,
+  "tune": 2571,
+  "test": 2604
+ },
+ "step_3_chosen": "random forest",
+ "step_3_cross_validation": {
+  "prompt average": {
+   "mae_points": 17.633340899641478,
+   "r2": 0.0948839132234246,
+   "exact": 0.32294472232910093,
+   "within_one": 0.7654225984352956,
+   "kappa_mean": 0.0
+  },
+  "length only": {
+   "mae_points": 12.054337020254607,
+   "r2": 0.5360617689638936,
+   "exact": 0.47659356162626654,
+   "within_one": 0.8482749775554701,
+   "kappa_mean": 0.62403706847005
+  },
+  "words only": {
+   "mae_points": 11.287529526479327,
+   "r2": 0.6036433540843725,
+   "exact": 0.4844170834936514,
+   "within_one": 0.8584070796460177,
+   "kappa_mean": 0.610170347034765
+  },
+  "ridge regression": {
+   "mae_points": 10.938264663241487,
+   "r2": 0.6251014069504633,
+   "exact": 0.505450814415801,
+   "within_one": 0.8635372579197127,
+   "kappa_mean": 0.7086347448599064
+  },
+  "random forest": {
+   "mae_points": 9.833550160010764,
+   "r2": 0.68554870211356,
+   "exact": 0.5508528921380018,
+   "within_one": 0.880723355136591,
+   "kappa_mean": 0.7527455775781638
+  },
+  "boosted trees": {
+   "mae_points": 9.921944361435218,
+   "r2": 0.686150580306097,
+   "exact": 0.5458509683211492,
+   "within_one": 0.8791843016544825,
+   "kappa_mean": 0.7552890460983311
+  }
+ },
+ "step_3_tune": {
+  "prompt average": {
+   "mae_points": 17.815246042504405,
+   "r2": 0.112196340582714,
+   "exact": 0.29832749902761574,
+   "within_one": 0.7666277712952159,
+   "kappa_mean": 0.0
+  },
+  "length only": {
+   "mae_points": 12.223918417136034,
+   "r2": 0.5326481357009918,
+   "exact": 0.46285492026448855,
+   "within_one": 0.8362504861921431,
+   "kappa_mean": 0.6037948710226253
+  },
+  "words only": {
+   "mae_points": 11.255674020610327,
+   "r2": 0.6072936490580156,
+   "exact": 0.47763516141579154,
+   "within_one": 0.8580318942045897,
+   "kappa_mean": 0.6262903463817533
+  },
+  "ridge regression": {
+   "mae_points": 11.02952182942234,
+   "r2": 0.6213970646897845,
+   "exact": 0.5075845974329055,
+   "within_one": 0.8409179307662388,
+   "kappa_mean": 0.6983402853167522
+  },
+  "random forest": {
+   "mae_points": 9.83362577376734,
+   "r2": 0.6731127015876568,
+   "exact": 0.5573706728899261,
+   "within_one": 0.8650330610657332,
+   "kappa_mean": 0.7615647938379981
+  },
+  "boosted trees": {
+   "mae_points": 9.99810824035061,
+   "r2": 0.6707193854647855,
+   "exact": 0.5534811357448464,
+   "within_one": 0.8642551536367172,
+   "kappa_mean": 0.7542798776355417
+  }
+ },
+ "step_3_steps_on_tune": {
+  "length only over prompt average": {
+   "gain_points": 5.591327625368374,
+   "low": 5.18317488241806,
+   "high": 6.019422073761903
+  },
+  "ridge regression over length only": {
+   "gain_points": 1.1943965877136926,
+   "low": 0.9510704975662462,
+   "high": 1.4202948700251723
+  },
+  "random forest over ridge regression": {
+   "gain_points": 1.1958960556550027,
+   "low": 0.9969919738618508,
+   "high": 1.414044890584432
+  },
+  "random forest over words only": {
+   "gain_points": 1.422048246842989,
+   "low": 1.105898041216097,
+   "high": 1.7360559399184274
+  }
+ },
+ "step_3_test": {
+  "prompt average": {
+   "mae_points": 17.7459292977804,
+   "r2": 0.08734574902287895,
+   "exact": 0.3099078341013825,
+   "within_one": 0.7572964669738863,
+   "kappa_mean": 0.0
+  },
+  "length only": {
+   "mae_points": 12.15574640374861,
+   "r2": 0.5306561493319105,
+   "exact": 0.4681259600614439,
+   "within_one": 0.8421658986175116,
+   "kappa_mean": 0.6216721440675496
+  },
+  "words only": {
+   "mae_points": 11.196341748328958,
+   "r2": 0.5975867645143859,
+   "exact": 0.4873271889400922,
+   "within_one": 0.859062980030722,
+   "kappa_mean": 0.6188410628006216
+  },
+  "ridge regression": {
+   "mae_points": 11.109026462631343,
+   "r2": 0.6110270568022826,
+   "exact": 0.4976958525345622,
+   "within_one": 0.8509984639016898,
+   "kappa_mean": 0.6902187083860987
+  },
+  "random forest": {
+   "mae_points": 9.878545960470142,
+   "r2": 0.6702636718286987,
+   "exact": 0.5514592933947773,
+   "within_one": 0.8663594470046083,
+   "kappa_mean": 0.7462336998151369
+  },
+  "boosted trees": {
+   "mae_points": 10.02649683169292,
+   "r2": 0.6717373290151678,
+   "exact": 0.5410906298003072,
+   "within_one": 0.869431643625192,
+   "kappa_mean": 0.7464066169858627
+  }
+ },
+ "step_3_improvement_on_test": {
+  "baseline": "length only",
+  "model": "random forest",
+  "exact_agreement_baseline": 0.4681259600614439,
+  "exact_agreement_model": 0.5514592933947773,
+  "exact_agreement_gain_in_points": 8.333333333333337,
+  "exact_agreement_gain_relative": 0.17801476620180479,
+  "mae_baseline": 12.15574640374861,
+  "mae_model": 9.878545960470142,
+  "mae_cut_relative": 0.1873353036203702,
+  "mae_gain_interval": {
+   "gain_points": 2.277200443278467,
+   "low": 1.9989484595640004,
+   "high": 2.5744698334748715
+  }
+ },
+ "step_4_label": {
+  "mean_kappa_rater_1_against_rater_2": 0.7526485153791581,
+  "mean_kappa_model_against_rater_2": 0.6881178890262045,
+  "prompts_where_model_is_at_least_rater_1": [
+   1,
+   5
+  ],
+  "raters_same_score_overall": 0.6171274961597543
+ },
+ "step_4_errors_by_score_band": [
+  {
+   "band": "low scores",
+   "responses": 1225,
+   "mean_error": 10.09492063081094,
+   "mean_signed_error": 5.836022972294987
+  },
+  {
+   "band": "middle scores",
+   "responses": 893,
+   "mean_error": 8.469501191317764,
+   "mean_signed_error": -2.553381703131067
+  },
+  {
+   "band": "high scores",
+   "responses": 486,
+   "mean_error": 11.922204412498118,
+   "mean_signed_error": -11.249711425647805
+  }
+ ],
+ "step_4_errors_by_rater_agreement": [
+  {
+   "raters": "gave the same score",
+   "responses": 1607,
+   "mean_error": 9.67115188453381
+  },
+  {
+   "raters": "gave different scores",
+   "responses": 997,
+   "mean_error": 10.212831095906138
+  }
+ ],
+ "step_4_probes": {
+  "the same text pasted twice": {
+   "responses": 2604,
+   "mean_score_before": 57.64654321324903,
+   "mean_score_after": 64.97866836813577,
+   "share_scored_higher": 0.9251152073732719,
+   "share_scored_lower": 0.0748847926267281
+  },
+  "the words in random order": {
+   "responses": 2604,
+   "mean_score_before": 57.64654321324903,
+   "mean_score_after": 57.27120657615892,
+   "share_scored_higher": 0.3579109062980031,
+   "share_scored_lower": 0.6401689708141322
+  },
+  "a good answer to a different prompt": {
+   "responses": 486,
+   "mean_score_before": 78.78801148244547,
+   "mean_score_after": 62.819378227038754,
+   "share_scored_higher": 0.2757201646090535,
+   "share_scored_lower": 0.7242798353909465
+  }
+ },
+ "step_4_new_prompt": {
+  "mean_kappa_trained_with": 0.7462336998151369,
+  "mean_kappa_never_saw": 0.5380189241272139,
+  "mean_error_trained_with": 9.53786048745938,
+  "mean_error_never_saw": 13.448105240428665
+ }
+}
